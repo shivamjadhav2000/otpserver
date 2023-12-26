@@ -1,39 +1,36 @@
-SMS OTP Verification Service
-This Node.js application provides a service for sending and verifying OTPs (One Time Passwords) using the MSG91 API.
+# SMS OTP Verification Service
+## This Node.js application provides a service for sending and verifying OTPs (One Time Passwords) using the MSG91 API.
 
-Getting Started
+**Getting Started**
 Prerequisites
 Node.js installed
 MSG91 API credentials (Auth Key, Template ID)
 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/shivamjadhav2000/otpserver.git
-Install dependencies:
+`git clone https://github.com/shivamjadhav2000/otpserver.git`
+### Install dependencies:
 
-bash
-Copy code
-npm install
+`npm install`
 Set up environment variables:
 
 Create a .env file in the root directory:
 
 plaintext
-Copy code
+
 Msg91AuthKey=your_msg91_auth_key_here
 TemplateId=your_msg91_template_id_here
-Usage
-Start the server:
 
-bash
-Copy code
-npm start
+Usage
+
+### Start the server:
+
+
+`npm start``
 The server will run on port 3001 by default. Make sure your environment allows connections on this port.
 
-Endpoints
-Send OTP
+## Endpoints
+## Send OTP
 URL: POST /sendOtp
 Description: Sends an OTP to the provided mobile number.
 Request Payload:
